@@ -1,0 +1,753 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+ /* this the styling for the header  */
+ header {
+    background-color: rgb(248, 248, 248);
+}
+
+/* Add some basic styling for sticky header */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the actual font name you want to use */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+/* Change menu text color on hover */
+a:hover {
+    color: red;
+}
+
+/* Hamburger Menu Styles  */
+.menu-icon {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+    }
+
+    .close-icon {
+        display: block;
+        font-size: 24px;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        display: none;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+/* Add responsiveness for larger screens */
+@media (min-width: 769px) {
+    ul {
+        flex-direction: row; /* Change back to horizontal layout for larger screens */
+        position: static; /* Remove absolute positioning */
+        background-color: transparent; /* Remove background color */
+        width: auto; /* Auto width for larger screens */
+    }
+
+    li {
+        margin: 0; /* Remove margin for larger screens */
+    }
+}
+
+
+
+img, embed, object, video, picture {
+        max-width: 100%;
+    }
+
+    p, h1, h2, h3, h4, h5 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+    }
+
+    input, textarea {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section h2, section h3, section p {
+        padding-left: 15px;
+    }
+
+    .spacer {
+        margin-top: 60px;
+    }
+
+    .txt-spacer {
+        margin-top: 30px;
+    }
+
+
+    .title h2{
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+
+
+/* this is styling for the nav bar  */
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row; /* Display menu items horizontally */
+
+}
+
+nav li {
+    margin: 0 0.5rem; /* Reduced padding for mobile screens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #dddddd; /* Change the color on hover */
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show on smaller screens */
+    }
+}
+
+.close-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+        /* Media Query for Tablet */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu-icon {
+                display: block; /* Show on smaller screens */
+            }
+
+            nav ul {
+                display: flex; /* Display the menu items horizontally */
+                flex-direction: column;
+                position: absolute;
+                top: 99px;
+                left: -100%; /* Initially off-screen to the left */
+                background-color: #0f1a1777;
+                width: 100%;
+                height: 100%;
+                transition: left 0.3s ease; /* Add a transition for smooth slide-in animation */
+                z-index: 1;
+            }
+
+       
+            nav ul.active {
+                left: 0; /* Slide the menu in from the left */
+            }
+
+            nav li {
+                margin: 0;
+                padding: 0.5rem;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures that the logo is a block-level element */
+    margin: 0; /* Reset any default margins */
+    padding: 0; /* Reset any default padding */
+}
+
+
+  /* this is teh code for the hero image  */
+  .heroimage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+
+/* this is the code for the IDP course information section  */
+.title h2{
+        text-align: center;
+        margin-bottom: 1em;
+        padding-top: 20px;
+        color: white;
+ }
+
+
+.info-image-2{
+ height: fit-content;
+ width: 685px;
+}
+
+.information-2 {
+padding-top: 60px;
+}
+
+/* this is the styling for the idp about-us section  */
+
+
+/* Style the container for the image with a red background */
+/* Style the container for the image with a custom box shadow */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Default box shadow for larger screens (desktop) */
+.image-container {
+    box-shadow: -10px -10px 0px 0px red; /* Custom box shadow */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .image-container {
+        box-shadow: -5px -5px 0px 0px red; /* Adjust shadow values for tablets */
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+    .image-container {
+        box-shadow: -3px -3px 6px 0px red; /* Adjust shadow values for mobile */
+    }
+}
+
+/* Media query for extra-large screens (xl screens) */
+@media (min-width: 1920px) {
+    .image-container {
+        box-shadow: -15px -15px 0px 0px red; /* Adjust shadow values for xl screens */
+    }
+
+    /* Increase font size for xl screens */
+    .about-us {
+        font-size: 32px;
+    }
+
+    /* Increase font size for paragraphs on xl screens */
+    .about-us + p {
+        font-size: 20px;
+    }
+
+    /* Increase image size for xl screens */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 100%; /* Adjust image width as needed */
+    }
+}
+
+/* Style headings */
+.about-us {
+    color: red; /* Initial text color */
+    text-decoration: underline; /* Initial underline */
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Style paragraphs */
+.about-us + p {
+    line-height: 1.5; /* Adjust line height as needed */
+    margin-bottom: 10px; /* Add margin between paragraphs */
+    color: white;
+}
+
+
+/* styling for  the more info button  */
+/* Style the "More Info" button with a simple appearance */
+.curved-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Style the "Yes" and "No" buttons */
+.black-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  margin: 5px;
+  border: none; /* Remove the border */
+  border-radius: 0; /* Remove border radius */
+  transition: background-color 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Add hover styles for the buttons */
+.curved-button:hover,
+.black-button:hover {
+  background-color: rgb(255, 0, 0); /* Change background color on hover */
+  color: rgb(0, 0, 0); /* Change text color on hover */
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .popup-content {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popup-content {
+        max-width: 95%;
+    }
+}
+
+/* Media query for extra-large screens (xl screens) */
+@media screen and (min-width: 1920px) {
+    .curved-button {
+        padding: 20px 40px; /* Adjust button padding for xl screens */
+        font-size: 24px; /* Increase font size for xl screens */
+    }
+
+    .black-button {
+        padding: 20px 40px; /* Adjust button padding for xl screens */
+        font-size: 24px; /* Increase font size for xl screens */
+    }
+}
+
+/* this is the styling for the video  */
+/* Base styles for the video container */
+ 
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+    overflow: hidden;
+    max-width: 100%;
+    padding-top: 60px ;
+
+  }
+  
+  /* Style the video element to fill its container */
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Center the video on tablet and desktop screens */
+  @media (min-width: 768px) {
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /* this is for the student portfolio  */
+
+
+.title-portfolio {
+   text-align: center;
+   padding: 30px 0px;
+   color: white ;
+}
+
+.student-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student-item {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: calc(50% - 20px); /* Display 2 columns on desktop */
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative; /* Required for pseudo-element */
+}
+
+.student-item a {
+    text-decoration: none;
+    color: #f80303;
+    font-weight: bold;
+}
+
+.student-item:hover {
+    border-color: #ff0000;
+    transform: translateY(-3px);
+}
+
+.student-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff0303;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Animation duration and easing */
+}
+
+.student-item:hover::before {
+    width: 100%; /* Expand the underline on hover */
+}
+
+#view-more-btn {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: large;
+    font-weight: 900;
+}
+
+#view-more-btn:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .student-item {
+        flex-basis: calc(50% - 20px); /* Display 2 columns on tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .student-item {
+        flex-basis: calc(100% - 20px); /* Display 1 column on mobile */
+    }
+
+    #view-more-btn {
+        padding: 10px 40px; /* Increase button width for better touch experience on mobile */
+    }
+}
+
+/* Media query for extra-large screens (xl screens) */
+@media (min-width: 1920px) {
+    .title-portfolio {
+        padding: 40px 0; /* Adjust padding for xl screens */
+        font-size: 36px; /* Increase font size for xl screens */
+    }
+
+    .student-list-container {
+        justify-content: space-between; /* Adjust spacing for xl screens */
+    }
+
+    .student-item {
+        flex-basis: calc(25% - 20px); /* Display 4 columns on xl screens */
+        margin: 10px;
+    }
+}
+
+
+
+/* stylling for testimonial is here  */
+ 
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slide {
+    text-align: center;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.testimonial-slide p {
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 50%;
+    padding: 20px; /* Increased height */
+    /* width: 100%; Extend width from end to end */
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.arrow:hover {
+    opacity: 0.6;
+    transform: scale(1.1); /* Smooth scale-up effect on hover */
+}
+
+@media (max-width: 768px) {
+    .testimonial-slide {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-slide p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for extra-large screens (xl screens) */
+@media (min-width: 1600px) {
+    .testimonial-container {
+        height: 80vh; /* Adjust container height for xl screens */
+    }
+
+    .testimonial-slide p {
+        font-size: 1.4rem; /* Increase font size for xl screens */
+        margin: 30px; /* Increase margin for xl screens */
+    }
+}
+
+
+
+
+/* this is the styling for the footer  */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footerlist{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* /responsive/ */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
