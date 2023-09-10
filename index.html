@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <title>TEAM-BOOTCAMP</title>
+</head>
+<body>
+ <header class="sticky-header">
+        <nav>
+            <img src="img/Fanshawe_edit-01-2048x1072.png" alt="logo" class="logo" style="width: 600px; height: auto";> 
+            <div class="menu-icon mobile mobile">&#9776;</div> <!-- Hamburger menu icon -->
+            <div class="close-icon">&times;</div> <!-- Close menu icon -->
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <main>
+
+    <!-- this is the hero image  -->
+      <section class="grid-con">
+        <h1 class="hidden">hero image</h1>
+        <div class="col-span-4 m-col-span-12 l-col-span-12  xl-col-span-12">
+        <img src="img/industry-night-photos/Industry Night_CDPA_04.23.15_AL_02.jpg" alt="hero iamge" class="heroimage">
+        </div>
+      </section>
+
+    <!-- information about interactive media designe cource  -->
+     <section class="grid-con">
+        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 title"><h2 >Interactive Media Design</h2></div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 image-container ">
+            <img src="img/interactive_media_design_justin_brunner_03.29.19_al_016.jpg" alt="referance image">
+        </div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+        <h3 class="about-us">Skills</h3>
+        <p class="about-us-info">The Interactive Media Design program at Fanshawe College places a strong emphasis on skills development. 
+          Over the course of two years, students delve into a comprehensive curriculum that covers graphic design, web development, user interface and user experience design, motion graphics, digital marketing, and interactive media production. 
+          Through hands-on learning and project-based coursework, students acquire the practical skills necessary to excel in the dynamic field of interactive media. 
+          They gain proficiency in utilizing various software tools and programming languages commonly used in the industry, ensuring they are well-equipped to create engaging and user-friendly digital experiences.</p>
+        </div>
+    </section>
+
+
+      <section class="grid-con information-2 ">
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+        <h3 class="about-us">Progression Opportunities</h3>
+          <p> Throughout the program, students experience significant progression in their abilities and knowledge. They start with foundational concepts and gradually advance to more complex and specialized topics. This progressive learning approach enables them to build a solid foundation in design principles, multimedia production techniques, and interactive media development. Additionally, some programs may offer internship or co-op opportunities, allowing students to apply their skills in real-world settings and further enhance their expertise. As they move through the program, students not only refine their technical skills but also develop critical problem-solving and creative thinking abilities, which are invaluable in the rapidly evolving field of interactive media.</p>
+        </div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6 image-container">
+            <img src="img/interactive_media_design_justin_brunner_03.29.19_al_016.jpg" alt="referance image">
+        </div>
+
+      </section>
+
+      <section class="grid-con information-2">
+        <div class="col-span-4 m-col-span-6 l-col-span-6 image-container">
+            <img src="img/interactive_media_design_justin_brunner_03.29.19_al_016.jpg" alt="referance image ">
+        </div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+        <h3 class="about-us">Career Outcomes</h3>
+        <p class="about-us-info">Upon graduation, students of the Interactive Media Design program at Fanshawe College are well-prepared for a wide range of career opportunities. They can pursue roles such as UI/UX designer, web developer, graphic designer, multimedia specialist, and digital marketer. Armed with a diverse skill set and practical experience gained during their studies, graduates are highly competitive in the job market. Many find employment in design studios, advertising agencies, web development companies, and other creative industries. Some graduates even opt to freelance or embark on entrepreneurial ventures, leveraging their skills to create innovative digital solutions and launch successful careers in the exciting and ever-evolving world of interactive media.</p>
+        </div>
+    </section>
+
+<!-- adding video for the promotion reel  -->
+<div class="video-container">
+  <video controls>
+    <source src="video/Comp2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+<section class="grid-con">
+  <button id="popupButton" class="col-start-2 col-end-4 m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8 curved-button">More Info</button>
+  <div id="popupContainer" class="popup-container">
+    <div class="popup-content">
+      <p>Do you want to be directed to the website?</p>
+      <button id="yesButton" class="black-button">Yes</button>
+      <button id="noButton" class="black-button">No</button>
+    </div>
+  </div>
+</section>
+
+<!-- this is for the portfolio  -->
+
+<h1 class="title-portfolio">Student Portfolios</h1>
+    <div class="student-list-container" id="student-list-container">
+        <!-- Student portfolios will be added here dynamically -->
+    </div>
+    <button id="view-more-btn">View More</button>
+
+
+
+<!-- here is going to the code for client upoming project  for level 4 -->
+
+     <section class="grid-con">
+        <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 title"><h2 >PROJECT INFO</h2></div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6 image-container ">
+            <img src="img/interactive_media_design_justin_brunner_03.29.19_al_016.jpg" alt="referance image">
+        </div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+        <h3 class="about-us">Interactive Marketing Campaign for a Local Non-Profit</h3>
+        <p class="about-us-info">Description: Students will design a multimedia marketing campaign for a local non-profit. Goals include developing a campaign strategy, branding, a user-friendly website, social media plan, content creation, and interactive features. They'll track campaign performance, emphasizing data-driven adjustments, and maintain close client collaboration.
+        <br>
+        document, branding assets, functional website, social media plan, interactive content, analytics reports, and a final client presentation.This project allows students to apply their interactive media design skills to a real-world, community-oriented project, preparing them for future careers.</p>
+        </div>
+    </section>
+
+
+<!-- here is the code for testimonials  -->
+<section class="testimonial-container">
+        <article class="testimonial-slide">
+            <p id="testimonial-text"></p>
+            <p id="testimonial-author"></p>
+        </article>
+        <nav class="arrows">
+            <span id="prev-arrow" class="arrow">◀</span>
+            <span id="next-arrow" class="arrow">▶</span>
+        </nav>
+    </section>
+
+</main>
+  
+
+<!-- this is the footer  -->
+
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul class="footerlist">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
